@@ -9,6 +9,9 @@ Then add the following to the file:
 layout: blog_layouts/blog_default
 ---
 
+# header section should be included in every layout
+{% include blog_sections/blog_header.html %}
+
 # add sections that you need from _includes/blog_sections
 {% include blog_sections/section_one.html %}
 {% include blog_sections/section_two.html %}
