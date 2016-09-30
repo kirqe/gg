@@ -1,0 +1,48 @@
+<!-- Blog: Item #2 -->
+<section class="section_blog-item section_blog-item_2">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="blog-item__block">
+        <!-- Blog item: Image -->
+        <img src="{{ page.sections['section_two']['photo'] }}" alt="...">
+      </div>
+    </div>
+
+    <div class="col-md-4 col-md-pull-2">
+      <div class="blog-item__block">
+        <div class="blog-item__body">
+          <!-- Blog item: Heading -->
+          <h2 class="blog-item__heading">
+            {{ page.sections['section_two']['title'] | textilize }}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div> <!-- / .row -->
+
+  <div class="row">
+    <div class="col-md-4">
+      <!-- Blog item: Tip -->
+      <div class="blog-item-tip__container">
+        <div class="blog-item__tip">
+          <h3 class="blog-item-tip__heading">
+            {{ page.sections['section_two']['tip']['title'] | textilize }}
+          </h3>
+          <p class="blog-item-tip__content">
+            {{ page.sections['section_two']['tip']['body'] | textilize }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <!-- Blog item: Caption -->
+      <div class="blog-item__caption">
+        <!-- Content -->
+        <p>
+          {{ page.sections['section_two']['caption']['body'] | textilize }}
+        </p>
+      </div>
+    </div>
+  </div> <!-- / .row -->
+</section>

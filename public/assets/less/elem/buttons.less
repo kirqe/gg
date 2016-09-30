@@ -1,0 +1,29 @@
+/**
+ * Buttons
+ */
+
+.btn {
+	display: inline-block;
+    padding: 0.75em 1.25em;
+    text-decoration: none;
+
+	&:hover, &:focus, &:active:focus, &.active:focus {
+		text-decoration: none;
+	}
+}
+.btn-default {
+	background-color: #2D2D2D;
+	color: white;
+
+	&:hover, &:focus, &:active:focus, &.active:focus {
+		background-color: #2D2D2D;
+		color: white;
+	}
+}
+.btn-link {
+	color: @text-color;
+
+	&:hover, &:focus, &:active:focus, &.active:focus {
+		color: @text-color;
+	}
+}

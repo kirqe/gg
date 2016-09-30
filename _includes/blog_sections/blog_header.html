@@ -1,0 +1,36 @@
+<!-- Blog: Header -->
+<section class="section_blog-header">
+  <div class="row">
+    <div class="col-sm-6">
+      <!-- Blog header: Heading -->
+      <h1 class="blog-header__heading">
+        {{ page.title }}
+      </h1>
+    </div>
+
+    <div class="col-sm-6">
+      <!-- Blog header: Datetime -->
+      <time class="blog-header__datetime" datetime="{{page.date}}">{{ page.date | date: '%d.%m.%Y' }}</time>
+      <!-- Blog header: Social links -->
+      <ul class="blog-header__social">
+        <li>
+          <a href="{{page.facebook_url}}">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="{{page.pinterest_url}}">
+            <i class="fa fa-pinterest"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12">
+      <!-- Blog header: Content -->
+      <div class="blog-header__content">
+        {{ content }}
+      </div>
+    </div>
+  </div> <!-- / .row -->
+</section>

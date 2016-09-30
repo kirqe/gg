@@ -1,0 +1,32 @@
+<!-- Blog: Item #5 -->
+<section class="section_blog-item section_blog-item_5">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="blog-item__block">
+        <!-- Blog item: Image -->
+        <img src="{{ page.sections['section_five']['photo'] | textilize }}" alt="...">
+      </div>
+    </div>
+
+    <div class="col-md-6 col-md-pull-1 col-lg-pull-2">
+      <div class="blog-item__block">
+        <div class="blog-item__body">
+          <!-- Blog item: Heading -->
+          <h2 class="blog-item__heading">
+            {{ page.sections['section_five']['title'] | textilize }}
+          </h2>
+
+          <!-- Blog item: Quote -->
+          <div class="blog-item__caption">
+            <!-- Content -->
+            <p>
+              {{ page.sections['section_five']['body'] | textilize }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- / .row -->
+</section>

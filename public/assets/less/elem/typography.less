@@ -1,0 +1,36 @@
+/**
+ * Typography
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two';
+
+@headings-font-family: "SofiaProUltraLight", arial, sans-serif;
+@font-family-base: "SariCompLight", arial, helvetica, sans-serif;
+
+@font-size-base: 16px;
+@line-height-base: 1.428571429;
+
+@line-height-computed: (@font-size-base * @line-height-base);
+
+
+/*** General ***/
+
+html {
+	font-size: 10px;
+
+	@media(max-width: 991px) {
+		font-size: 9px;
+	}
+	@media(max-width: 767px) {
+		font-size: 8px;
+	}
+}
+body {
+	font-size: @font-size-base;
+}
+
+/*** Misc ***/
+
+.text-center {
+	text-align: center;
+}
