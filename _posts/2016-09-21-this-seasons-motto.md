@@ -3,6 +3,8 @@ layout: blog_layouts/1_section
 title:  "This seasons motto is go beige or go home"
 featured_image: http://placehold.it/720x600
 date:   2016-08-21
+facebook_url: "http://www.facebook.com/"
+pinterest_url: "http://www.pinterest.com/"
 sections:
  section_one:
   title: Beeren<span>looks</span>

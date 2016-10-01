@@ -3,6 +3,8 @@ layout: blog_layouts/1_section
 title:  "The Berry Comeback 1"
 featured_image: http://placehold.it/720x600
 date:   2016-09-21
+facebook_url: "http://www.facebook.com/"
+pinterest_url: "http://www.pinterest.com/"
 sections:
  section_one:
   title: Beeren<span>looks</span>

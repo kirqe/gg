@@ -3,6 +3,8 @@ layout: blog_layouts/1_section
 title:  "Diese Saison wird es fruchtig"
 featured_image: http://placehold.it/1920x768
 date:   2016-09-25
+facebook_url: "http://www.facebook.com/"
+pinterest_url: "http://www.pinterest.com/"
 sections:
  section_one:
   title: Beeren<span>looks</span>

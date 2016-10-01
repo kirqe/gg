@@ -4,6 +4,8 @@ title:  "Diese Saison Wird Es Fruchtig 1"
 featured_image: http://placehold.it/1920x768
 middle: true
 date:   2016-09-17
+facebook_url: "http://www.facebook.com/"
+pinterest_url: "http://www.pinterest.com/"
 sections:
  section_one:
   title: Beeren<span>looks</span>
