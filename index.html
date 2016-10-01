@@ -1,175 +1,138 @@
 ---
 layout: default
-title: "Posts"
 ---
 
 <main id="page_1">
-  <!-- Section #1 -->
-<section class="section_1 bg-image" style="background-image: url(http://placehold.it/1920x768);">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-md-6 col-lg-5">
 
-        <!-- Text block -->
-        <div class="text-block">
-          <h1 class="text-block__heading">
-            Diese Saison Wird Es Fruchtig
-          </h1>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <a href="#" class="btn btn-default">
-            Weiterlesen
-          </a>
-        </div>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
-
-<!-- Section #2 -->
-<section class="section_2 same-height-text-blocks">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url(http://placehold.it/720x600);">
-
-        <!-- Text block -->
-        <div class="text-block">
-          <h3 class="text-block__heading">
-            The Berry Comeback
-          </h3>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <div class="text-center">
-            <a href="#" class="btn btn-link">
-              Weiterlesen <i class="fa fa-angle-right"></i>
-            </a>
+  {% for post in site.posts limit:1 %}
+    <section class="section_1 bg-image" style="background-image: url({{ post.featured_image }});">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-6 col-lg-5">
+            <!-- Text block -->
+            <div class="text-block">
+              <h1 class="text-block__heading">
+                {{ post.title }}
+              </h1>
+              <time class="text-block__time" datetime="2016-02-23">
+                <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y'}}
+              </time>
+              <p class="text-block__content">
+                {{ post.content | strip_html | truncatewords: 20 }}
+              </p>
+              <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-default">
+                Weiterlesen
+              </a>
+            </div>
           </div>
-        </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    <!-- Section #1 -->
+  {% endfor %}
 
-      </div>
-      <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url(http://placehold.it/720x600);">
-
-        <!-- Text block -->
-        <div class="text-block">
-          <h3 class="text-block__heading">
-            This seasons motto is go beige or go home
-          </h3>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <div class="text-center">
-            <a href="#" class="btn btn-link">
-              Weiterlesen <i class="fa fa-angle-right"></i>
-            </a>
+  <section class="section_2 same-height-text-blocks">
+    <div class="container">
+      <div class="row">
+        {% for post in site.posts offset:1 limit:2 %}
+          <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url({{ post.featured_image }});">
+            <!-- Text block -->
+            <div class="text-block">
+              <h3 class="text-block__heading">
+                {{ post.title }}
+              </h3>
+              <time class="text-block__time" datetime="2016-02-23">
+                <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y' }}
+              </time>
+              <p class="text-block__content">
+                {{ post.content | strip_html | truncatewords: 20 }}
+              </p>
+              <div class="text-center">
+                <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-link">
+                  Weiterlesen <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-
+        {% endfor %}
       </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
+    </div>
+  </section>
 
-<!-- Sectio #3 -->
-<section class="section_3 bg-image" style="background-image: url(http://placehold.it/1920x768);">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
+{% assign mid_posts = site.posts | where: 'middle', true %}
 
-        <!-- Text block -->
-        <div class="text-block text-center">
-          <h3 class="text-block__heading">
-            Diese Saison Wird Es Fruchtig
-          </h3>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <a href="#" class="btn btn-default">
-            Weiterlesen
-          </a>
-        </div>
+{% for post in mid_posts limit:1 %}
+    <!-- Sectio #3 -->
+    <section class="section_3 bg-image" style="background-image: url({{ post.featured_image }});">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <!-- Text block -->
+            <div class="text-block text-center">
+              <h3 class="text-block__heading">
+                {{ post.title }}
+              </h3>
+              <time class="text-block__time" datetime="2016-02-23">
+                <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y' }}
+              </time>
+              <p class="text-block__content">
+                {{ post.content | strip_html | truncatewords: 20 }}
+              </p>
+              <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-default">
+                Weiterlesen
+              </a>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+{% endfor %}
 
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
-</section>
+
 
 <!-- Section #4 -->
 <section class="section_5">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-
         <a href="#" class="btn btn-default">WEITERE STORIES LADEN</a>
-
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
 </section>
+
 
 <!-- Section #5 -->
 <section class="section_5 same-height-text-blocks">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url(http://placehold.it/720x600);">
+      {% for post in site.posts offset:3 %}
+        <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url({{ post.featured_image }});">
 
-        <!-- Text block -->
-        <div class="text-block">
-          <h3 class="text-block__heading">
-            The Berry Comeback
-          </h3>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <div class="text-center">
-            <a href="#" class="btn btn-link">
-              Weiterlesen <i class="fa fa-angle-right"></i>
-            </a>
+          <!-- Text block -->
+          <div class="text-block">
+            <h3 class="text-block__heading">
+              {{ post.title }}
+            </h3>
+            <time class="text-block__time" datetime="2016-02-23">
+              <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y' }}
+            </time>
+            <p class="text-block__content">
+              {{ post.content | strip_html | truncatewords: 20 }}
+            </p>
+            <div class="text-center">
+              <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-link">
+                Weiterlesen <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
           </div>
+
         </div>
-
-      </div>
-      <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url(http://placehold.it/720x600);">
-
-        <!-- Text block -->
-        <div class="text-block">
-          <h3 class="text-block__heading">
-            This seasons motto is go beige or go home
-          </h3>
-          <time class="text-block__time" datetime="2016-02-23">
-            <i class="fa fa-clock-o"></i> 23.Februar,2016
-          </time>
-          <p class="text-block__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor...
-          </p>
-          <div class="text-center">
-            <a href="#" class="btn btn-link">
-              Weiterlesen <i class="fa fa-angle-right"></i>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- / .row -->
-  </div> <!-- / .container -->
+      {% endfor %}
+    </div>
+  </div>
 </section>
+
 </main> <!-- #blog -->
 
 
