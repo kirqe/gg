@@ -57,18 +57,22 @@ sections:
       photo: http://placehold.it/500x400
       name: Miami
       cost: 89.95 €
+      url: /
     item2:
       photo: http://placehold.it/500x400
       name: Kent
       cost: 89.95 €
+      url: /
     item3:
       photo: http://placehold.it/500x400
       name: Malmo
       cost:
+      url: /
     item4:
       photo: http://placehold.it/500x400
       name: Malmo
       cost: 99.95 €
+      url: /
 ---
 
 Satte Beerentöne sind zur Zeit ein absolutes Highlight und begegnen Euch in allen Nuancen: verführerisches Rot, knalliges Pink und edle Bordeuxtöne - unsere Lieblingsfarben der aktuellen Kollektion sind vielfältig, aufregend und ein Must-Have für winterliche Looks. Unsere Designerin Anna hat drei Kombinationen für Euch zusammengestellt.
