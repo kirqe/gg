@@ -89,11 +89,11 @@ layout: default
 {% endfor %}
 
 <!-- Section #4 -->
-<section class="section_5">
+<section class="section_5 loadMoreOneWrap">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <a href="#" class="btn btn-default">WEITERE STORIES LADEN</a>
+        <a class="btn btn-default loadMoreOne">WEITERE STORIES LADEN</a>
       </div>
     </div> <!-- / .row -->
   </div> <!-- / .container -->
@@ -103,29 +103,54 @@ layout: default
 <section class="section_5 same-height-text-blocks">
   <div class="container">
     <div class="row">
-      {% for post in site.posts offset:3 %}
-        <div class="col-xs-12 col-sm-6 bg-image" style="background-image: url({{ post.featured_image }});">
-          <!-- Text block -->
-          <div class="text-block">
-            <h3 class="text-block__heading">
-              {{ post.title }}
-            </h3>
-            <time class="text-block__time" datetime="2016-02-23">
-              <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y' }}
-            </time>
-            <p class="text-block__content">
-              {{ post.content | strip_html | truncatewords: 20 }}
-            </p>
-            <div class="text-center">
-              <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-link">
-                Weiterlesen <i class="fa fa-angle-right"></i>
-              </a>
+      {% if paginator.page %}
+        {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
+        {% assign currentPage = paginator.page %}
+      {% else %}
+        {% assign offset = 3 %}
+        {% assign currentPage =  %}
+      {% endif %}
+
+      <div id="blogContainer" class="postContainer" data-page="{{ currentPage }}" data-totalPages="{{ paginator.total_pages }}">
+        {% for post in site.posts limit:site.paginate offset:offset %}
+          <div class="col-xs-12 col-sm-6 bg-image post" style="background-image: url({{ post.featured_image }});">
+            <!-- Text block -->
+            <div class="text-block">
+              <h3 class="text-block__heading">
+                {{ post.title }}
+              </h3>
+              <time class="text-block__time" datetime="{{ post.date }}">
+                <i class="fa fa-clock-o"></i> {{ post.date | date: '%d.%B,%Y' }}
+              </time>
+              <p class="text-block__content">
+                {{ post.content | strip_html | truncatewords: 20 }}
+              </p>
+              <div class="text-center">
+                <a href="{{ post.url | prepend:site.baseurl }}" class="btn btn-link">
+                  Weiterlesen <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+      {% assign postCount = site.posts | size %}
+      {% assign postsCovered = site.paginate | plus:offset %}
+
     </div>
   </div>
 </section>
+
+{% if postsCovered < postCount %}
+<section class="section_5 loadMoreWrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a class="btn btn-default loadMore">WEITERE STORIES LADEN</a>
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .container -->
+</section>
+{% endif %}
 
 </main> <!-- #blog -->
