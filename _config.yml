@@ -3,6 +3,7 @@ permalink: /blog/:title
 
 url: ''
 baseurl: ''
+
 description: Site description here
 
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
