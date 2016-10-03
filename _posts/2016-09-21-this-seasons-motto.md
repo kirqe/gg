@@ -5,6 +5,8 @@ featured_image: http://placehold.it/720x600
 date:   2016-08-21
 facebook_url: "http://www.facebook.com/"
 pinterest_url: "http://www.pinterest.com/"
+summary: |
+  another summary222
 sections:
  section_one:
   title: Beeren<span>looks</span>

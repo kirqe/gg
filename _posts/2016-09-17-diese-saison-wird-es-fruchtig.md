@@ -6,6 +6,8 @@ middle: true
 date:   2016-09-17
 facebook_url: "http://www.facebook.com/"
 pinterest_url: "http://www.pinterest.com/"
+summary: |
+  another summary111
 sections:
  section_one:
   title: Beeren<span>looks</span>
