@@ -1,11 +1,11 @@
 ---
 layout: blog_layouts/1_section
-title:  "The Berry Comeback 1"
-featured_image: http://placehold.it/720x600
-date:   2016-09-21
+title:  "Diese Saison wird es fruchtig"
+featured_image: http://placehold.it/1920x768
+date:   2016-09-25
 facebook_url: "http://www.facebook.com/"
 pinterest_url: "http://www.pinterest.com/"
-summary: test
+summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor..."
 sections:
  section_one:
   title: Beeren<span>looks</span>
@@ -20,4 +20,4 @@ sections:
    photo: http://placehold.it/150x150
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Satte Beerentöne sind zur Zeit ein absolutes Highlight und begegnen Euch in allen Nuancen: verführerisches Rot, knalliges Pink und edle Bordeuxtöne - unsere Lieblingsfarben der aktuellen Kollektion sind vielfältig, aufregend und ein Must-Have für winterliche Looks. Unsere Designerin Anna hat drei Kombinationen für Euch zusammengestellt.
