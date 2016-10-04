@@ -1,12 +1,12 @@
 ---
 layout: blog_layouts/1_section
-title:  "This seasons motto is go beige or go home"
-featured_image: http://placehold.it/720x600
-date:   2016-08-21
+title:  "MIDDLE SAISON WIRD ES FRUCHTIG"
+featured_image: http://placehold.it/1920x768
+middle: true
+date:   2016-09-17
 facebook_url: "http://www.facebook.com/"
 pinterest_url: "http://www.pinterest.com/"
-summary: |
-  another summary222
+summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor"
 sections:
  section_one:
   title: Beeren<span>looks</span>

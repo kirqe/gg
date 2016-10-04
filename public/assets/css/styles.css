@@ -1206,6 +1206,8 @@ body {
   margin: 0 0 25px 0;
   font-size: 50px;
   font-family: "SofiaProUltraLight", arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 #blog .blog-header__datetime {
   text-align: right;
@@ -1268,6 +1270,7 @@ body {
   margin-bottom: 40px;
   background-color: white;
   font-size: 42px;
+  text-transform: uppercase;
 }
 #blog .blog-item__heading > span {
   font-weight: bolder;
@@ -1360,15 +1363,18 @@ body {
   font-size: .8em;
 }
 #blog .blog-item-tip__container {
+  display: table;
   background-color: #111;
-  width: 210px;
-  height: 210px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   padding: 15px;
 }
 #blog .blog-item__tip {
-  width: 180px;
-  height: 180px;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   padding: 15px;
@@ -1398,6 +1404,15 @@ body {
 #blog .blog-item__plain {
   line-height: 1.7;
 }
+#blog .blog-item__thing {
+  display: block;
+  color: #2d2d2d;
+}
+#blog .blog-item__thing:hover,
+#blog .blog-item__thing:focus {
+  color: #2d2d2d;
+  text-decoration: none;
+}
 #blog .blog-item__thing > img {
   max-width: 100%;
   height: auto;
@@ -1411,8 +1426,26 @@ body {
   color: #c6c6c6;
   text-decoration: line-through;
 }
-#blog .blog-item__thing a {
-  text-decoration: none;
+#blog .section_blog-item_2 {
+  position: relative;
+  /* Absolutely positioned caption */
+  /* Tip */
+}
+#blog .section_blog-item_2 .blog-item__absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (min-width: 768px) {
+  #blog .section_blog-item_2 .row_centered {
+    display: table;
+    width: 100%;
+  }
+  #blog .section_blog-item_2 .row_centered > [class*="col-"] {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+  }
 }
 #blog .section_blog-item_2 .blog-item-tip__container {
   margin-left: auto;
@@ -1465,6 +1498,9 @@ body {
   /*** Section 2 ***/
   /*** Section 3 ***/
 }
+#page_1 .btn {
+  text-transform: uppercase;
+}
 #page_1 .text-block {
   margin: 20rem auto 0;
   padding: 5rem;
@@ -1474,6 +1510,7 @@ body {
   margin: 0 0 10px;
   font-family: "SofiaProUltraLight", arial, sans-serif;
   font-size: 4.2rem;
+  text-transform: uppercase;
 }
 #page_1 h3.text-block__heading {
   font-size: 3.6rem;
@@ -1489,6 +1526,9 @@ body {
 #page_1 section {
   margin-bottom: 10rem;
 }
+#page_1 section.section_empty {
+  margin-bottom: 0;
+}
 #page_1 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1498,11 +1538,12 @@ body {
   background-size: cover;
 }
 #page_1 .section_2 .bg-image,
-#page_1 .section_5 .bg-image {
+#page_1 .section_blog-item .bg-image {
   background-clip: content-box;
+  background-size: 100% auto;
 }
 #page_1 .section_2 .text-block,
-#page_1 .section_5 .text-block {
+#page_1 .section_blog-item .text-block {
   max-width: 90%;
 }
 #page_1 .section_3 .text-block {
