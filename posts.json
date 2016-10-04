@@ -8,7 +8,7 @@
         "title": "{{ post.title }}",
         "summary": "{{ post.summary | strip_html }}",
         "date": "{{ post.date | date: '%d.%B,%Y' }}",
-        "url": "{{ post.url }}",
+        "url": "{{ site.baseurl}}{{ post.url }}",
         "featured_image": "{{ post.featured_image }}"
       }
       {% unless forloop.last %},{% endunless %}
