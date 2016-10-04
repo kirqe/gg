@@ -3,8 +3,6 @@ layout: blog_layouts/7_sections
 title:  "LOREM IPSUM DOLOR SIT AMET 4"
 featured_image: http://placehold.it/720x600
 date:   2016-08-21
-facebook_url: "http://www.facebook.com/"
-pinterest_url: "http://www.pinterest.com/"
 summary: "another summary"
 sections:
   section_one:

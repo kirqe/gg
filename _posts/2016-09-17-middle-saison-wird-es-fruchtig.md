@@ -4,8 +4,6 @@ title:  "MIDDLE SAISON WIRD ES FRUCHTIG"
 featured_image: http://placehold.it/1920x768
 middle: true
 date:   2016-09-17
-facebook_url: "http://www.facebook.com/"
-pinterest_url: "http://www.pinterest.com/"
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor"
 sections:
  section_one:

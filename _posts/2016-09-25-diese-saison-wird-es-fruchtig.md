@@ -3,8 +3,6 @@ layout: blog_layouts/1_section
 title:  "Diese Saison wird es fruchtig"
 featured_image: http://placehold.it/1920x768
 date:   2016-09-25
-facebook_url: "http://www.facebook.com/"
-pinterest_url: "http://www.pinterest.com/"
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor..."
 sections:
  section_one:
