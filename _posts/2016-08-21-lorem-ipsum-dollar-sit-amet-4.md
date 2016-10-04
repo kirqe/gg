@@ -1,7 +1,7 @@
 ---
 layout: blog_layouts/7_sections
 title:  "LOREM IPSUM DOLOR SIT AMET 4"
-featured_image: http://placehold.it/720x600
+featured_image: http://placehold.it/720x500
 date:   2016-08-21
 summary: "another summary"
 sections:

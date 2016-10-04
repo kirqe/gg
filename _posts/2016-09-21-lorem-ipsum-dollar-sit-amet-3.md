@@ -1,7 +1,7 @@
 ---
 layout: blog_layouts/1_section
 title:  "LOREM IPSUM DOLOR SIT AMET 3"
-featured_image: http://placehold.it/720x600
+featured_image: http://placehold.it/720x500
 date:   2016-08-21
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
 sections:
