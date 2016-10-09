@@ -5,3 +5,10 @@ baseurl: ''
 
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
+
+
+# default meta for index page
+meta:
+  description: "Meta description for index page"
+  keywords: "one1, two2, three3"
+  author: "John Doe"

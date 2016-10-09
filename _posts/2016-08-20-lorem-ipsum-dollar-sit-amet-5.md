@@ -4,6 +4,12 @@ title:  "LOREM IPSUM DOLOR SIT AMET 5"
 featured_image: http://placehold.it/720x500
 date:   2016-08-20
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
+
+meta:
+  description: "LOREM IPSUM DOLOR SIT AMET 54"
+  keywords: "one, two, three"
+  author: "John Doe"
+
 sections:
  section_one:
   title: Beeren<span>looks</span>
