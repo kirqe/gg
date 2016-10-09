@@ -6,7 +6,7 @@
 /*** Load blog items ***/
 
 
-$.getJSON("/posts.json", function(data) {
+$.getJSON("{{site.baseurl}}/posts.json", function(data) {
 	var items = [];
 
 	for (var key in data) {
