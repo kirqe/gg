@@ -4,6 +4,12 @@ title:  "Diese Saison wird es fruchtig"
 featured_image: http://placehold.it/1920x768
 date:   2016-09-25
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor..."
+
+meta:
+  description: "Diese Saison wird es fruchtig"
+  keywords: "one, two, three"
+  author: "John Doe"
+
 sections:
  section_one:
   title: Beeren<span>looks</span>

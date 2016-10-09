@@ -5,6 +5,12 @@ featured_image: http://placehold.it/1920x768
 middle: true
 date:   2016-09-17
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor"
+
+meta:
+  description: "MIDDLE SAISON WIRD ES FRUCHTIG"
+  keywords: "one, two, three"
+  author: "John Doe"
+
 sections:
  section_one:
   title: Beeren<span>looks</span>

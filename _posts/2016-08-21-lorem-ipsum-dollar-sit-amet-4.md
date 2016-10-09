@@ -4,6 +4,12 @@ title:  "LOREM IPSUM DOLOR SIT AMET 4"
 featured_image: http://placehold.it/720x500
 date:   2016-08-21
 summary: "another summary"
+
+meta:
+  description: "LOREM IPSUM DOLOR SIT AMET 4"
+  keywords: "one, two, three"
+  author: "John Doe"
+
 sections:
   section_one:
     title: Beeren<span>looks</span>
