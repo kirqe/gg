@@ -1,5 +1,5 @@
 markdown: kramdown
-permalink: /blog/:title
+permalink: /blog/:title.html
 
 baseurl: ''
 
