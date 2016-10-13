@@ -4,7 +4,9 @@
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img src="{{ page.sections['section_six']['photo'] }}" alt="...">
+        <img
+        src="{{ page.sections['section_six']['photo']['url'] }}"
+        alt="{{ page.sections['section_six']['photo']['alt'] }}">
       </div>
     </div>
   </div> <!-- / .row -->

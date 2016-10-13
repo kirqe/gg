@@ -4,7 +4,9 @@
     <div class="col-md-8">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img src="{{ page.sections['section_two']['photo'] }}" alt="...">
+        <img
+        src="{{ page.sections['section_two']['photo']['url'] }}"
+        alt="{{ page.sections['section_two']['photo']['alt'] }}">
       </div>
     </div>
 

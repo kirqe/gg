@@ -4,7 +4,9 @@
     <div class="col-md-6">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img src="{{ page.sections['section_one']['photo'] | textilize }}" alt="...">
+        <img
+        src="{{ page.sections['section_one']['photo']['url']}}"
+        alt="{{ page.sections['section_one']['photo']['alt'] }}">
       </div>
     </div>
 
@@ -25,7 +27,9 @@
             <!-- Author -->
             <div class="blog-item-quote__author">
               <div class="blog-item-quote-author__img">
-                <img src="{{ page.sections['section_one']['author']['photo'] | textilize }}" alt="...">
+                <img
+                src="{{ page.sections['section_one']['author']['photo']['url'] }}"
+                alt="{{ page.sections['section_one']['author']['photo']['alt'] }}">
               </div>
               <div class="blog-item-quote-author__name__info">
                 <div class="blog-item-quote-author__name">

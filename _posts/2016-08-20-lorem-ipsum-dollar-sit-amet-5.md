@@ -2,7 +2,6 @@
 layout: blog_layouts/1_section
 title:  "LOREM IPSUM DOLOR SIT AMET 5"
 featured_image: http://placehold.it/720x500
-date:   2016-08-20
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
 
 meta:
@@ -13,7 +12,9 @@ meta:
 sections:
  section_one:
   title: Beeren<span>looks</span>
-  photo: http://placehold.it/400x600
+  photo:
+    url: http://placehold.it/400x600
+    alt: "alt text"
   body: |
     Himbeeren, Brombeeren, Erdbeeren - ich kann diesen Winter gar nicht genug kriegen von den bunten Früchten. Mein Tipp für lässige Looks: Color- Blocking - kombiniert die Farben in allen Facetten und schreckt auch vor wilden Kombinationen nicht zurück!
   author:
@@ -21,7 +22,9 @@ sections:
    position: |
     Design und Produktentwicklung
     ara Shoes Norwegen
-   photo: http://placehold.it/150x150
+   photo:
+    url: "http://placehold.it/150x150"
+    alt: "alt text 1"
 ---
 
 Satte Beerentöne sind zur Zeit ein absolutes Highlight und begegnen Euch in allen Nuancen: verführerisches Rot, knalliges Pink und edle Bordeuxtöne - unsere Lieblingsfarben der aktuellen Kollektion sind vielfältig, aufregend und ein Must-Have für winterliche Looks. Unsere Designerin Anna hat drei Kombinationen für Euch zusammengestellt.

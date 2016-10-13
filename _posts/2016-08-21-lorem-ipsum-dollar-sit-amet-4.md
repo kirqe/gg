@@ -2,7 +2,6 @@
 layout: blog_layouts/7_sections
 title:  "LOREM IPSUM DOLOR SIT AMET 4"
 featured_image: http://placehold.it/720x500
-date:   2016-08-21
 summary: "another summary"
 
 meta:
@@ -13,7 +12,9 @@ meta:
 sections:
   section_one:
     title: Beeren<span>looks</span>
-    photo: http://placehold.it/400x600
+    photo:
+      url: "http://placehold.it/400x600"
+      alt: "alt text here"
     body: |
       Himbeeren, Brombeeren, Erdbeeren - ich kann diesen Winter gar nicht genug kriegen von den bunten Früchten. Mein Tipp für lässige Looks: Color- Blocking - kombiniert die Farben in allen Facetten und schreckt auch vor wilden Kombinationen nicht zurück!
     author:
@@ -21,11 +22,15 @@ sections:
       position: |
         Design und Produktentwicklung
         ara Shoes Norwegen
-      photo: http://placehold.it/150x150
+      photo:
+        url: "http://placehold.it/150x150"
+        alt: "alt text here"
 
   section_two:
     title: Farb<span>rausch</span>
-    photo: http://placehold.it/600x600
+    photo:
+      url: "http://placehold.it/600x600"
+      alt: "alt text here"
     tip:
       title: STYLING TIPP
       body: Besonders lässig wird der Look wenn Ihr verschiedene MAterialien miteinnder kombiniert.
@@ -35,7 +40,9 @@ sections:
 
   section_three:
     title: Farb<span>tupfer</span>
-    photo: http://placehold.it/400x600
+    photo:
+      url: "http://placehold.it/400x600"
+      alt: "alt text here"
     body: |
       Wenn Ihr es farblich etwas kontrastreicher mögt, könnt Ihr Euer Outfit in Grau- und Schwarztönen halten und mit unseren kirschroten Ballerinas einen beerigen Farbakzent setzen! Einen Hauch Elegnaz verleiht euch die blumige Bosche. Dazu eine lässige Tasche und voilá, fertig ist der Beeren-Klassiker - der ideale All-Dy-Look für den Tag unterwegs!
 
@@ -47,34 +54,46 @@ sections:
 
   section_five:
     title: Creme<span>berry</span>
-    photo: http://placehold.it/400x600
+    photo:
+      url: "http://placehold.it/400x600"
+      alt: "alt text here"
     body: |
       Wenn Ihr es farblich etwas kontrastreicher mögt, könnt Ihr Euer Outfit in Grau- und Schwarztönen halten und mit unseren kirschroten Ballerinas einen beerigen Farbakzent setzen! Einen Hauch Elegnaz verleiht euch die blumige Bosche. Dazu eine lässige Tasche und voilá, fertig ist der Beeren-Klassiker - der ideale All-Dy-Look für den Tag unterwegs!
 
   section_six:
-    photo: http://placehold.it/750x500
+    photo:
+      url: "http://placehold.it/750x500"
+      alt: "alt text here"
     body: |
       Beerentöne bringenFarbe und gute Laune in die dunkele Jahreszeit und haben einen festen Platz in unserer Herbst/Wintekollektion 2016! Für weitere Inspiration stöbert einfach durch unsere aktuellen Modelle. Ein gemütlicher Schuh ist immer die optimale Basis für Euren winterlichen Lieblingslook.
 
   section_seven:
     title: Get <span>the look</span>
     item1:
-      photo: http://placehold.it/500x400
+      photo:
+        url: "http://placehold.it/500x400"
+        alt: "alt text here"
       name: Miami
       cost: 89.95 €
       url: /
     item2:
-      photo: http://placehold.it/500x400
+      photo:
+        url: "http://placehold.it/500x400"
+        alt: "alt text here"
       name: Kent
       cost: 89.95 €
       url: /
     item3:
-      photo: http://placehold.it/500x400
+      photo:
+        url: "http://placehold.it/500x400"
+        alt: "alt text here"
       name: Malmo
       cost:
       url: /
     item4:
-      photo: http://placehold.it/500x400
+      photo:
+        url: "http://placehold.it/500x400"
+        alt: "alt text here"
       name: Malmo
       cost: 99.95 €
       url: /

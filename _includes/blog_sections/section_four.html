@@ -5,7 +5,9 @@
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img src="{{ page.sections['section_four']['photo'] | textilize }}" alt="...">
+        <img
+        src="{{ page.sections['section_four']['photo']['url'] }}"
+        alt="{{ page.sections['section_four']['photo']['alt'] }}">
       </div>
     </div>
 
