@@ -2,14 +2,14 @@
 ---
 
 [
-
     {% for post in site.posts %}
       {
         "title": "{{ post.title }}",
         "summary": "{{ post.summary | strip_html }}",
         "date": "{{ post.date | date: '%d.%B,%Y' }}",
         "url": "{{ site.baseurl}}{{ post.url }}",
-        "featured_image": "{{ post.featured_image }}"
+        "featured_image": "{{ post.featured_image }}",
+        "middle": "{{ post.middle }}"
       }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}

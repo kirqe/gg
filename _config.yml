@@ -1,11 +1,11 @@
 markdown: kramdown
 permalink: /blog/:title.html
 
-baseurl: /gg
+url: www.example.com # update this to your site url: eg www.example.com
+baseurl: /gg # if needed: eg /test
 
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
-
 
 # default meta for index page
 meta:

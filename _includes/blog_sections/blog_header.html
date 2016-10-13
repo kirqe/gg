@@ -14,12 +14,12 @@
       <!-- Blog header: Social links -->
       <ul class="blog-header__social">
         <li>
-          <a href="http://www.facebook.com/sharer/sharer.php?u={{page.url}}&title={{page.title}}" target="_blank">
+          <a href="http://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}&title={{page.title}}" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="http://pinterest.com/pin/create/bookmarklet/?media=[MEDIA]&url={{page.url}}&is_video=false&description={{page.title}}" target="_blank">
+          <a href="http://pinterest.com/pin/create/bookmarklet/?media={{page.featured_image}}&url={{site.url}}{{page.url}}&is_video=false&description={{page.title}}" target="_blank">
             <i class="fa fa-pinterest"></i>
           </a>
         </li>
