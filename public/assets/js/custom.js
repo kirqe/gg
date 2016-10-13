@@ -12,7 +12,9 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 	var items = [];
 
 	for (var key in data) {
-		items.push(data[key]);
+		if(data[key]['middle'] != "true"){
+			items.push(data[key]);
+		}
 	}
 
 	function renderMarkup(arr) {
