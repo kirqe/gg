@@ -1,7 +1,8 @@
 markdown: kramdown
 permalink: /blog/:title.html
 
-baseurl: ''
+url: www.example.com # update this to your site url: eg www.example.com
+baseurl: '' # if needed: eg /test
 
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
