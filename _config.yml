@@ -7,6 +7,7 @@ baseurl: /gg # if needed: eg /test
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
 
+
 # default meta for index page
 meta:
   description: "Meta description for index page"
