@@ -56,7 +56,7 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 	$(".section_2 > .container").append( renderMarkup(defaultItems) );
 
 	// Load more items on click
-	var itemsLoaded = 4;
+	var itemsLoaded = 3;
 	var itemsLoad = itemsLoaded + 6;
 
 	$("#blog-items__load").click(function() {
