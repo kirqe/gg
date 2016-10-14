@@ -5,7 +5,7 @@
       <div class="blog-item__block">
         <!-- Blog item: Image -->
         <img
-        src="{{ page.sections['section_three']['photo']['url'] }}"
+        src="{{ page.sections['section_three']['photo']['url'] | prepend:site.baseurl }}"
         alt="{{ page.sections['section_three']['photo']['alt'] }}">
       </div>
     </div>
