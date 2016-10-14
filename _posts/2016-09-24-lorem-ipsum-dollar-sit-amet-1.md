@@ -1,7 +1,7 @@
 ---
 layout: blog_layouts/1_section
 title:  "LOREM IPSUM DOLOR SIT AMET 1"
-featured_image: /img/720x500.png
+featured_image: 720x500.png
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
 
 meta:
@@ -13,7 +13,7 @@ sections:
  section_one:
   title: Beeren<span>looks</span>
   photo:
-    url: /img/400x600.png
+    name: 400x600.png
     alt: alt text for image
   body: |
     Himbeeren, Brombeeren, Erdbeeren - ich kann diesen Winter gar nicht genug kriegen von den bunten Früchten. Mein Tipp für lässige Looks: Color- Blocking - kombiniert die Farben in allen Facetten und schreckt auch vor wilden Kombinationen nicht zurück!
@@ -23,7 +23,7 @@ sections:
     Design und Produktentwicklung
     ara Shoes Norwegen
    photo:
-    url: /img/150x150.png
+    name: 150x150.png
     alt: alt text for image
 ---
 

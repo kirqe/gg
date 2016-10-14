@@ -3,6 +3,7 @@ permalink: /blog/:title.html
 
 url: www.example.com # update this to your site url: eg www.example.com
 baseurl: '' # if needed: eg /test
+imgbase: '/img/' # images folder: eg /test/img
 
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]

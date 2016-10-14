@@ -8,7 +8,7 @@
         "summary": "{{ post.summary | strip_html }}",
         "date": "{{ post.date | date: '%d.%B,%Y' }}",
         "url": "{{ site.baseurl}}{{ post.url }}",
-        "featured_image": "{{ site.baseurl}}{{ post.featured_image}}",
+        "featured_image": "{{ site.baseurl}}{{ site.imgbase }}{{ post.featured_image }}",
         "middle": "{{ post.middle }}"
       }
       {% unless forloop.last %},{% endunless %}
