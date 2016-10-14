@@ -5,7 +5,7 @@
       <div class="blog-item__block">
         <!-- Blog item: Image -->
         <img
-        src="{{ page.sections['section_one']['photo']['url']}}"
+        src="{{ page.sections['section_one']['photo']['url'] | prepend:site.baseurl }}"
         alt="{{ page.sections['section_one']['photo']['alt'] }}">
       </div>
     </div>
@@ -28,7 +28,7 @@
             <div class="blog-item-quote__author">
               <div class="blog-item-quote-author__img">
                 <img
-                src="{{ page.sections['section_one']['author']['photo']['url'] }}"
+                src="{{ page.sections['section_one']['author']['photo']['url'] | prepend:site.baseurl }}"
                 alt="{{ page.sections['section_one']['author']['photo']['alt'] }}">
               </div>
               <div class="blog-item-quote-author__name__info">
