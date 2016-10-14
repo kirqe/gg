@@ -47,7 +47,9 @@ sections:
       Wenn Ihr es farblich etwas kontrastreicher mögt, könnt Ihr Euer Outfit in Grau- und Schwarztönen halten und mit unseren kirschroten Ballerinas einen beerigen Farbakzent setzen! Einen Hauch Elegnaz verleiht euch die blumige Bosche. Dazu eine lässige Tasche und voilá, fertig ist der Beeren-Klassiker - der ideale All-Dy-Look für den Tag unterwegs!
 
   section_four:
-    photo: http://placehold.it/750x300
+    photo: 
+      url: 'http://placehold.it/750x300'
+      alt: "alt text here"
     tip:
       title: STYLING TIPP
       body: Ergänzt den Farbakzent an euren Füßren mit einem passenden Lippenstift, so wird das Outfit richtig run!
