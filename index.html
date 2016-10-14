@@ -5,7 +5,7 @@ layout: default
 <main id="page_1">
 
   {% for post in site.posts limit:1 %}
-    <section class="section_1 bg-image" style="background-image: url({{ post.featured_image  | prepend:site.baseurl }});">
+    <section class="section_1 bg-image" style="background-image: url({{ post.featured_image  | prepend:site.imgbase }});">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-6 col-lg-5">
@@ -41,7 +41,7 @@ layout: default
 
 {% for post in mid_posts limit:1 %}
     <!-- Sectio #3 -->
-    <section class="section_3 bg-image" style="background-image: url({{ post.featured_image | prepend:site.baseurl }});">
+    <section class="section_3 bg-image" style="background-image: url({{ post.featured_image | prepend:site.imgbase }});">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
