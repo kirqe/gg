@@ -2,7 +2,6 @@
 layout: blog_layouts/1_section
 title:  "LOREM IPSUM DOLOR SIT AMET 1"
 featured_image: http://placehold.it/720x500
-featured_alt: "alt for featured image"
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
 
 meta:
