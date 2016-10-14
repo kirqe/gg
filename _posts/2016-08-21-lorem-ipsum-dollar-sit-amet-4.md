@@ -1,13 +1,7 @@
 ---
 layout: blog_layouts/7_sections
-<<<<<<< Updated upstream:_posts/2016-08-21-lorem-ipsum-dollar-sit-amet-4.md
 title:  "LOREM IPSUM DOLOR SIT AMET 4"
 featured_image: http://placehold.it/720x500
-=======
-title:  "Diese Saison wird es fruchtig"
-featured_image: ![ara Winter Look Beerentöne]/img/test.jpg)
-date:   2016-08-21
->>>>>>> Stashed changes:_posts/01-10-2016-diese-saison-wird-es-fruchtig.md
 summary: "another summary"
 
 meta:
@@ -28,13 +22,9 @@ sections:
       position: |
         Design und Produktentwicklung
         ara Shoes Norwegen
-<<<<<<< Updated upstream:_posts/2016-08-21-lorem-ipsum-dollar-sit-amet-4.md
       photo:
         url: "http://placehold.it/150x150"
         alt: "alt text here"
-=======
-      photo: /img/test.jpg
->>>>>>> Stashed changes:_posts/01-10-2016-diese-saison-wird-es-fruchtig.md
 
   section_two:
     title: Farb<span>rausch</span>

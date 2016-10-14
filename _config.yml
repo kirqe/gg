@@ -1,12 +1,8 @@
 markdown: kramdown
-permalink: /story/:title.html
+permalink: /blog/:title.html
 
-<<<<<<< Updated upstream
 url: www.example.com # update this to your site url: eg www.example.com
 baseurl: '' # if needed: eg /test
-=======
-baseurl: '/ext/dmag'
->>>>>>> Stashed changes
 
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
