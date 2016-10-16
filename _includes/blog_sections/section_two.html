@@ -1,23 +1,16 @@
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
         <img
         src="{{ page.sections['section_two']['photo']['name'] | prepend:site.imgbase }}"
         alt="{{ page.sections['section_two']['photo']['alt'] }}">
-      </div>
-    </div>
-
-    <div class="col-md-4 col-md-pull-2">
-      <div class="blog-item__block">
-        <div class="blog-item__body">
-          <!-- Blog item: Heading -->
-          <h2 class="blog-item__heading">
-            {{ page.sections['section_two']['title'] | textilize }}
-          </h2>
-        </div>
+        <!-- Blog item: Heading -->
+        <h2 class="blog-item__heading blog-item__absolute">
+          {{ page.sections['section_two']['title'] | textilize }}
+        </h2>
       </div>
     </div>
   </div> <!-- / .row -->
