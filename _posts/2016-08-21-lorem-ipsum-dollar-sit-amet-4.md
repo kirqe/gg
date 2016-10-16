@@ -29,7 +29,7 @@ sections:
   section_two:
     title: Farb<span>rausch</span>
     photo:
-      name: 600x600.png
+      name: 1920x1020.png
       alt: alt text here
     tip:
       title: STYLING TIPP
@@ -75,28 +75,28 @@ sections:
       photo:
         name: 500x400.png
         alt: alt text here
-      name: Miami
+      title: Miami
       cost: 89.95 €
       name: /
     item2:
       photo:
         name: 500x400.png
         alt: alt text here
-      name: Kent
+      title: Kent
       cost: 89.95 €
       name: /
     item3:
       photo:
         name: 500x400.png
         alt: alt text here
-      name: Malmo
+      title: Malmo
       cost:
       name: /
     item4:
       photo:
         name: 500x400.png
         alt: alt text here
-      name: Malmo
+      title: Malmo
       cost: 99.95 €
       name: /
 ---
