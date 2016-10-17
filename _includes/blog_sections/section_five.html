@@ -1,3 +1,9 @@
+<!-- section image, alt and title, body -->
+{% assign img1 = page.sections['section_five']['photo']['name'] | prepend:site.imgbase %}
+{% assign alt1 = page.sections['section_five']['photo']['alt'] %}
+{% assign title = page.sections['section_five']['title'] | textilize %}
+{% assign caption = page.sections['section_five']['body'] | textilize %}
+
 <!-- Blog: Item #5 -->
 <section class="section_blog-item section_blog-item_5">
   <div class="row">
@@ -5,9 +11,9 @@
     <div class="col-md-6">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img
-        src="{{ page.sections['section_five']['photo']['name'] | prepend:site.imgbase }}"
-        alt="{{ page.sections['section_five']['photo']['alt'] }}">
+        <a href="{{ img1 }}" target="_blank">
+          <img src="{{ img1 }}" alt="{{ alt1 }}">
+        </a>
       </div>
     </div>
 
@@ -16,14 +22,14 @@
         <div class="blog-item__body">
           <!-- Blog item: Heading -->
           <h2 class="blog-item__heading">
-            {{ page.sections['section_five']['title'] | textilize }}
+            {{ title }}
           </h2>
 
           <!-- Blog item: Quote -->
           <div class="blog-item__caption">
             <!-- Content -->
             <p>
-              {{ page.sections['section_five']['body'] | textilize }}
+              {{ caption }}
             </p>
           </div>
         </div>

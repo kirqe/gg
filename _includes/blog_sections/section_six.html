@@ -1,12 +1,17 @@
+<!-- section image, alt and body -->
+{% assign img1 = page.sections['section_six']['photo']['name'] | prepend:site.imgbase %}
+{% assign alt1 = page.sections['section_six']['photo']['alt'] %}
+{% assign caption = page.sections['section_six']['body'] %}
+
 <!-- Blog: Item #6 -->
 <section class="section_blog-item section_blog-item_6">
   <div class="row">
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img
-        src="{{ page.sections['section_six']['photo']['name'] | prepend:site.imgbase }}"
-        alt="{{ page.sections['section_six']['photo']['alt'] }}">
+        <a href="{{ img1 }}" target="_blank">
+          <img src="{{ img1 }}" alt="{{ alt1 }}">
+        </a>
       </div>
     </div>
   </div> <!-- / .row -->
@@ -14,7 +19,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <p class="blog-item__plain">
-        {{ page.sections['section_six']['body'] }}
+        {{ caption }}
       </p>
     </div>
   </div> <!-- / .row -->

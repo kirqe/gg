@@ -1,15 +1,27 @@
+<!-- section image, alt and title -->
+{% assign img1 = page.sections['section_two']['photo']['name'] | prepend:site.imgbase %}
+{% assign alt1 = page.sections['section_two']['photo']['alt'] %}
+{% assign title = page.sections['section_two']['title'] | textilize %}
+
+<!-- tip heading and content -->
+{% assign tip_heading = page.sections['section_two']['tip']['title'] | textilize %}
+{% assign tip_content = page.sections['section_two']['tip']['body'] | textilize %}
+
+<!-- section main caption -->
+{% assign caption = page.sections['section_two']['caption']['body'] | textilize %}
+
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">
   <div class="row">
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <img
-        src="{{ page.sections['section_two']['photo']['name'] | prepend:site.imgbase }}"
-        alt="{{ page.sections['section_two']['photo']['alt'] }}">
+        <a href="{{ img1 }}" target="_blank">
+          <img src="{{ img1}}" alt="{{ alt1 }}">
+        </a>
         <!-- Blog item: Heading -->
         <h2 class="blog-item__heading blog-item__absolute">
-          {{ page.sections['section_two']['title'] | textilize }}
+          {{ title }}
         </h2>
       </div>
     </div>
@@ -21,10 +33,10 @@
       <div class="blog-item-tip__container">
         <div class="blog-item__tip">
           <h3 class="blog-item-tip__heading">
-            {{ page.sections['section_two']['tip']['title'] | textilize }}
+            {{ tip_heading }}
           </h3>
           <p class="blog-item-tip__content">
-            {{ page.sections['section_two']['tip']['body'] | textilize }}
+            {{ tip_content }}
           </p>
         </div>
       </div>
@@ -35,7 +47,7 @@
       <div class="blog-item__caption">
         <!-- Content -->
         <p>
-          {{ page.sections['section_two']['caption']['body'] | textilize }}
+          {{ caption }}
         </p>
       </div>
     </div>
