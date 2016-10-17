@@ -15,6 +15,7 @@ sections:
   title: Beeren<span>looks</span>
   photo:
     name: 400x600.png
+    ext_url: "https://www.example.com"
     alt: alt text here
   body: |
     Himbeeren, Brombeeren, Erdbeeren - ich kann diesen Winter gar nicht genug kriegen von den bunten Früchten. Mein Tipp für lässige Looks: Color- Blocking - kombiniert die Farben in allen Facetten und schreckt auch vor wilden Kombinationen nicht zurück!
@@ -25,6 +26,7 @@ sections:
     ara Shoes Norwegen
    photo:
     name: 150x150.png
+    ext_url: "https://www.example.com"
     alt: alt text here
 ---
 
