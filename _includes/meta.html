@@ -4,14 +4,17 @@
 
 {% if page.url == '/' %}
   {% assign resource = site %}
+  <meta name="description" content="{{resource.meta.description}}">
+  <meta name="keywords" content="{{resource.meta.keywords}}">
+  <meta name="author" content="{{resource.meta.author}}">
+
 {% else %}
   {% assign resource = page %}
+  <meta name="description" content="{{resource.meta.description}}">
+  <meta name="keywords" content="{{resource.meta.keywords}}">
+  <meta name="author" content="{{resource.meta.author}}">
+
+  <meta property="og:title" content="{{resource.title}}" />
+  <meta property="og:description" content="{{resource.summary}}" />
+  <meta property="og:image" content="{{resource.featured_image | prepend:site.imgbase}}" />
 {% endif %}
-
-<meta name="description" content="{{resource.meta.description}}">
-<meta name="keywords" content="{{resource.meta.keywords}}">
-<meta name="author" content="{{resource.meta.author}}">
-
-<meta property="og:title" content="{{resource.title}}" />
-<meta property="og:description" content="{{resource.summary}}" />
-<meta property="og:image" content="{{resource.featured_image | prepend:site.imgbase}}" />
