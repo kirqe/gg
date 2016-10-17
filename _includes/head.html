@@ -1,23 +1,11 @@
 <head>
   <title>
     {% if page.title %}
-      {{ page.title }} &ndash;
+      {{ page.title }}
     {% endif %}
   </title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {% if page.url == '/' %}
-    {% assign resource = site.meta %}
-  {% else %}
-    {% assign resource = page.meta %}
-  {% endif %}
-
-  <meta name="description" content="{{resource.description}}">
-  <meta name="keywords" content="{{resource.keywords}}">
-  <meta name="author" content="{{resource.author}}">
+  {% include meta.html %}
 
   <link rel="shortcut icon" href="https://www.ara-shoes.de/out/azure/img/favicon.ico">
 
