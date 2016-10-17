@@ -1,6 +1,7 @@
 <!-- section image, alt and title -->
 {% assign img1 = page.sections['section_two']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt1 = page.sections['section_two']['photo']['alt'] %}
+{% assign img1_ext_url  = page.sections['section_two']['photo']['ext_url'] %}
 {% assign title = page.sections['section_two']['title'] | textilize %}
 
 <!-- tip heading and content -->
@@ -16,7 +17,7 @@
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <a href="{{ img1 }}" target="_blank">
+        <a href="{{ img1_ext_url }}" target="_blank">
           <img src="{{ img1}}" alt="{{ alt1 }}">
         </a>
         <!-- Blog item: Heading -->

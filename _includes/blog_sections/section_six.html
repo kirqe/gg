@@ -1,6 +1,7 @@
 <!-- section image, alt and body -->
 {% assign img1 = page.sections['section_six']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt1 = page.sections['section_six']['photo']['alt'] %}
+{% assign img1_ext_url  = page.sections['section_six']['photo']['ext_url'] %}
 {% assign caption = page.sections['section_six']['body'] %}
 
 <!-- Blog: Item #6 -->
@@ -9,7 +10,7 @@
     <div class="col-sm-12">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <a href="{{ img1 }}" target="_blank">
+        <a href="{{ img1_ext_url }}" target="_blank">
           <img src="{{ img1 }}" alt="{{ alt1 }}">
         </a>
       </div>

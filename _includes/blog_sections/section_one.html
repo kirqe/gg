@@ -1,12 +1,15 @@
-<!-- section image, alt and title, body -->
+<!-- section image, alt, external_url and title, body -->
 {% assign img1 = page.sections['section_one']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt1 = page.sections['section_one']['photo']['alt'] %}
+{% assign img1_ext_url  = page.sections['section_one']['photo']['ext_url'] %}
+
 {% assign title = page.sections['section_one']['title'] | textilize %}
 {% assign body = page.sections['section_one']['body'] | textilize %}
 
 <!-- author photo, alt and name, position -->
 {% assign img2 = page.sections['section_one']['author']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt2 = page.sections['section_one']['author']['photo']['alt'] %}
+{% assign img2_ext_url  = page.sections['section_one']['author']['photo']['ext_url'] %}
 {% assign author_name = page.sections['section_one']['author']['name'] | textilize %}
 {% assign author_position = page.sections['section_one']['author']['position'] | textilize %}
 
@@ -16,7 +19,7 @@
     <div class="col-md-6">
       <div class="blog-item__block">
         <!-- Blog item: Image -->
-        <a href="{{ img1 }}" target="_blank">
+        <a href="{{ img1_ext_url }}" target="_blank">
           <img src="{{ img1 }}" alt="{{ alt1 }}">
         </a>
       </div>
@@ -39,7 +42,7 @@
             <!-- Author -->
             <div class="blog-item-quote__author">
               <div class="blog-item-quote-author__img">
-                <a href="{{ img2 }}" target="_blank">
+                <a href="{{ img2_ext_url }}" target="_blank">
                   <img src="{{ img2 }}" alt="{{ alt2 }}">
                 </a>
               </div>
