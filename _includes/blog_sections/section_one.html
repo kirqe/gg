@@ -4,7 +4,7 @@
 {% assign img1_ext_url  = page.sections['section_one']['photo']['ext_url'] %}
 
 {% assign title = page.sections['section_one']['title'] | textilize %}
-{% assign body = page.sections['section_one']['body'] | textilize %}
+{% assign body = page.sections['section_one']['body'] | markdownify %}
 
 <!-- author photo, alt and name, position -->
 {% assign img2 = page.sections['section_one']['author']['photo']['name'] | prepend:site.imgbase %}
@@ -36,9 +36,7 @@
           <!-- Blog item: Quote -->
           <div class="blog-item__quote">
             <!-- Content -->
-            <p>
               {{ body }}
-            </p>
             <!-- Author -->
             <div class="blog-item-quote__author">
               <a href="{{ img2_ext_url }}" target="_blank">
