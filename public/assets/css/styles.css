@@ -1418,9 +1418,6 @@ body {
   height: auto;
   margin: 0 auto 15px;
 }
-#blog .blog-item__thing a {
-  text-decoration: none;
-}
 #blog .blog-item__thing h3 {
   text-align: center;
   font-size: 16px;
@@ -1428,6 +1425,9 @@ body {
 #blog .blog-item__thing h3 > span {
   color: #c6c6c6;
   text-decoration: line-through;
+}
+#blog a.blog-item__thing-link {
+  text-decoration: none;
 }
 #blog .section_blog-item_2 {
   position: relative;
