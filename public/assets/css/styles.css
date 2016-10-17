@@ -1401,7 +1401,7 @@ body {
   border: 1px solid #eaeaea;
   line-height: 1.7;
 }
-#blog .blog-item__plain {
+#blog .blog-item__plain, #blog .blog-item__plain p {
   line-height: 1.7;
 }
 #blog .blog-item__thing {

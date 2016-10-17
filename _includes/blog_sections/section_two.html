@@ -9,7 +9,7 @@
 {% assign tip_content = page.sections['section_two']['tip']['body'] | textilize %}
 
 <!-- section main caption -->
-{% assign caption = page.sections['section_two']['caption']['body'] | textilize %}
+{% assign caption = page.sections['section_two']['caption']['body'] | markdownify %}
 
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">
@@ -36,9 +36,9 @@
           <h3 class="blog-item-tip__heading">
             {{ tip_heading }}
           </h3>
-          <p class="blog-item-tip__content">
+          <div class="blog-item-tip__content">
             {{ tip_content }}
-          </p>
+          </div>
         </div>
       </div>
     </div>
@@ -47,9 +47,7 @@
       <!-- Blog item: Caption -->
       <div class="blog-item__caption">
         <!-- Content -->
-        <p>
           {{ caption }}
-        </p>
       </div>
     </div>
   </div> <!-- / .row -->

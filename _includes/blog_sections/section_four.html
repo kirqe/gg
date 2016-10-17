@@ -3,7 +3,7 @@
 {% assign alt1 = page.sections['section_four']['photo']['alt'] %}
 {% assign img1_ext_url  = page.sections['section_four']['photo']['ext_url'] %}
 {% assign title = page.sections['section_four']['tip']['title'] | textilize %}
-{% assign caption = page.sections['section_four']['tip']['body'] | textilize %}
+{% assign caption = page.sections['section_four']['tip']['body'] | markdownify %}
 
 <!-- Blog: Item #4 -->
 <section class="section_blog-item section_blog-item_4">
@@ -25,9 +25,9 @@
           <h3 class="blog-item-tip__heading">
             {{ title }}
           </h3>
-          <p class="blog-item-tip__content">
+          <div class="blog-item-tip__content">
             {{ caption }}
-          </p>
+          </div>
         </div>
       </div>
     </div>
