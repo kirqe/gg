@@ -8,7 +8,9 @@
 /*** Load blog items ***/
 
 
+
 $.getJSON("{{site.baseurl}}/posts.json", function(data) {
+
 	var items = [];
 
 	for (var key in data) {
@@ -16,6 +18,12 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 			items.push(data[key]);
 		}
 	}
+
+	// Load more items on click
+	var itemsLoaded = 3;
+	var itemsLoad = itemsLoaded + 6;
+
+	allowLoadMore(itemsLoaded, items)
 
 	function renderMarkup(arr) {
 		var markup = "";
@@ -49,15 +57,16 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 
 		return markup;
 	}
+	function allowLoadMore(itemsLoaded, items){
+		if (itemsLoaded >= items.length) {
+			$(".section_5").hide();
+		}
+	}
 
 	// Append default blog items
 	var defaultItems = items.slice(1,3);
 
 	$(".section_2 > .container").append( renderMarkup(defaultItems) );
-
-	// Load more items on click
-	var itemsLoaded = 3;
-	var itemsLoad = itemsLoaded + 6;
 
 	$("#blog-items__load").click(function() {
 		var moreItems = items.slice(itemsLoaded, itemsLoad);
@@ -65,9 +74,7 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 		$(".section_4 > .container").append( renderMarkup(moreItems) )
 		$(".section_4").removeClass("section_empty");
 
-		if (itemsLoad >= items.length) {
-			$(".section_5").hide();
-		}
+		allowLoadMore(itemsLoaded, items)
 
 		itemsLoaded = itemsLoad;
 		itemsLoad = itemsLoaded + 6;
