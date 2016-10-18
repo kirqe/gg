@@ -17,7 +17,7 @@
 <section class="section_blog-item section_blog-item_1">
   <div class="row">
     <div class="col-md-6">
-      <a href="{{ img1_ext_url }}" target="_blank">
+      <a href="{{ img1_ext_url }}" target="_blank" class="{{ 'inactive-link' if (img1_ext_url == '') }}">
         <div class="blog-item__block">
           <!-- Blog item: Image -->
           <img src="{{ img1 }}" alt="{{ alt1 }}">
@@ -39,7 +39,7 @@
               {{ body }}
             <!-- Author -->
             <div class="blog-item-quote__author">
-              <a href="{{ img2_ext_url }}" target="_blank">
+              <a href="{{ img2_ext_url }}" target="_blank" class="{{ 'inactive-link' if (img2_ext_url == '') }}">
                 <div class="blog-item-quote-author__img">
                   <img src="{{ img2 }}" alt="{{ alt2 }}">
                 </div>
