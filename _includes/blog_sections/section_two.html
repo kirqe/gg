@@ -1,15 +1,15 @@
 <!-- section image, alt and title -->
-{% assign img1 = page.sections['section_two']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt1 = page.sections['section_two']['photo']['alt'] %}
-{% assign img1_ext_url  = page.sections['section_two']['photo']['ext_url'] %}
-{% assign title = page.sections['section_two']['title'] | textilize %}
+{% assign img1 = page.sections.section_two.photo.name | prepend:site.imgbase %}
+{% assign alt1 = page.sections.section_two.photo.alt %}
+{% assign img1_ext_url  = page.sections.section_two.photo.ext_url %}
+{% assign title = page.sections.section_two.title | textilize %}
 
 <!-- tip heading and content -->
-{% assign tip_heading = page.sections['section_two']['tip']['title'] | textilize %}
-{% assign tip_content = page.sections['section_two']['tip']['body'] | textilize %}
+{% assign tip_heading = page.sections.section_two.tip.title | textilize %}
+{% assign tip_content = page.sections.section_two.tip.body | textilize %}
 
 <!-- section main caption -->
-{% assign caption = page.sections['section_two']['caption']['body'] | markdownify %}
+{% assign caption = page.sections.section_two.caption.body | markdownify %}
 
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">

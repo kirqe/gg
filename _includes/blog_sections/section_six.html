@@ -1,8 +1,8 @@
 <!-- section image, alt and body -->
-{% assign img1 = page.sections['section_six']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt1 = page.sections['section_six']['photo']['alt'] %}
-{% assign img1_ext_url  = page.sections['section_six']['photo']['ext_url'] %}
-{% assign caption = page.sections['section_six']['body'] | markdownify %}
+{% assign img1 = page.sections.section_six.photo.name | prepend:site.imgbase %}
+{% assign alt1 = page.sections.section_six.photo.alt %}
+{% assign img1_ext_url  = page.sections.section_six.photo.ext_url %}
+{% assign caption = page.sections.section_six.body | markdownify %}
 
 <!-- Blog: Item #6 -->
 <section class="section_blog-item section_blog-item_6">
