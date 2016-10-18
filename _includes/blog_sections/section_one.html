@@ -1,7 +1,7 @@
 <!-- section image, alt, external_url and title, body -->
 {% assign img1 = page.sections['section_one']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt1 = page.sections['section_one']['photo']['alt'] %}
-{% assign img1_ext_url  = page.sections['section_one']['photo']['ext_url'] %}
+{% assign img1_ext_url  = page.sections['section_one']['photo']['ext_url'] | strip %}
 
 {% assign title = page.sections['section_one']['title'] | textilize %}
 {% assign body = page.sections['section_one']['body'] | markdownify %}
@@ -9,7 +9,7 @@
 <!-- author photo, alt and name, position -->
 {% assign img2 = page.sections['section_one']['author']['photo']['name'] | prepend:site.imgbase %}
 {% assign alt2 = page.sections['section_one']['author']['photo']['alt'] %}
-{% assign img2_ext_url  = page.sections['section_one']['author']['photo']['ext_url'] %}
+{% assign img2_ext_url  = page.sections['section_one']['author']['photo']['ext_url'] | strip %}
 {% assign author_name = page.sections['section_one']['author']['name'] | textilize %}
 {% assign author_position = page.sections['section_one']['author']['position'] | textilize %}
 
@@ -17,7 +17,9 @@
 <section class="section_blog-item section_blog-item_1">
   <div class="row">
     <div class="col-md-6">
-      <a href="{{ img1_ext_url }}" target="_blank" class="{{ 'inactive-link' if (img1_ext_url == '') }}">
+      <a href="{{ img1_ext_url }}" target="_blank" {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
+
+
         <div class="blog-item__block">
           <!-- Blog item: Image -->
           <img src="{{ img1 }}" alt="{{ alt1 }}">
@@ -39,7 +41,7 @@
               {{ body }}
             <!-- Author -->
             <div class="blog-item-quote__author">
-              <a href="{{ img2_ext_url }}" target="_blank" class="{{ 'inactive-link' if (img2_ext_url == '') }}">
+              <a href="{{ img2_ext_url }}" target="_blank" {% if img2_ext_url == "" %}class="inactive-link"{% endif %}>
                 <div class="blog-item-quote-author__img">
                   <img src="{{ img2 }}" alt="{{ alt2 }}">
                 </div>

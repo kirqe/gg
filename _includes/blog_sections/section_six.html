@@ -8,7 +8,7 @@
 <section class="section_blog-item section_blog-item_6">
   <div class="row">
     <div class="col-sm-12">
-      <a href="{{ img1_ext_url }}" target="_blank" class="{{ 'inactive-link' if (img1_ext_url == '') }}">
+      <a href="{{ img1_ext_url }}" target="_blank"  {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
         <div class="blog-item__block">
           <!-- Blog item: Image -->
           <img src="{{ img1 }}" alt="{{ alt1 }}">

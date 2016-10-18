@@ -37,7 +37,7 @@
 
   <div class="row">
     <div class="col-sm-3">
-      <a href="{{ itm1_ext_url }}" class="blog-item__thing-link" class="{{ 'inactive-link' if (itm1_ext_url == '') }}">
+      <a href="{{ itm1_ext_url }}" class="blog-item__thing-link {% if itm1_ext_url == "" %}inactive-link{% endif %}">
         <div class="blog-item__thing">
           <!-- Image -->
           <img src="{{ img1 }}" alt="{{ alt1 }}">
@@ -51,7 +51,7 @@
     </div>
 
     <div class="col-sm-3">
-      <a href="{{ itm2_ext_url }}" class="blog-item__thing-link" class="{{ 'inactive-link' if (itm2_ext_url == '') }}">
+      <a href="{{ itm2_ext_url }}" class="blog-item__thing-link {% if itm2_ext_url == "" %}inactive-link{% endif %}">
         <div class="blog-item__thing">
           <!-- Image -->
           <img src="{{ img2 }}" alt="{{ alt2 }}">
@@ -65,7 +65,7 @@
     </div>
 
     <div class="col-sm-3">
-      <a href="{{ itm3_ext_url }}" class="blog-item__thing-link" class="{{ 'inactive-link' if (itm3_ext_url == '') }}">
+      <a href="{{ itm3_ext_url }}" class="blog-item__thing-link {% if itm3_ext_url == "" %}inactive-link{% endif %}">
         <div class="blog-item__thing">
           <!-- Image -->
           <img src="{{ img3 }}" alt="{{ alt3 }}">
@@ -78,7 +78,7 @@
     </div>
 
     <div class="col-sm-3">
-      <a href="{{ itm4_ext_url }}" class="blog-item__thing-link" class="{{ 'inactive-link' if (itm4_ext_url == '') }}">
+      <a href="{{ itm4_ext_url }}" class="blog-item__thing-link {% if itm4_ext_url == "" %}inactive-link{% endif %}">
         <div class="blog-item__thing">
           <!-- Image -->
           <img src="{{ img4 }}" alt="{{ alt4 }}">
