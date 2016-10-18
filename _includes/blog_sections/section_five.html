@@ -1,16 +1,16 @@
 <!-- section image, alt and title, body -->
-{% assign img1 = page.sections['section_five']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt1 = page.sections['section_five']['photo']['alt'] %}
-{% assign img1_ext_url  = page.sections['section_five']['photo']['ext_url'] %}
-{% assign title = page.sections['section_five']['title'] | textilize %}
-{% assign caption = page.sections['section_five']['body'] | markdownify %}
+{% assign img1 = page.sections.section_five.photo.name | prepend:site.imgbase %}
+{% assign alt1 = page.sections.section_five.photo.alt %}
+{% assign img1_ext_url  = page.sections.section_five.photo.ext_url %}
+{% assign title = page.sections.section_five.title | textilize %}
+{% assign caption = page.sections.section_five.body | markdownify %}
 
 <!-- Blog: Item #5 -->
 <section class="section_blog-item section_blog-item_5">
   <div class="row">
 
     <div class="col-md-6">
-      <a href="{{ img1_ext_url }}" target="_blank">
+      <a href="{{ img1_ext_url }}" target="_blank"  {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
         <div class="blog-item__block">
           <!-- Blog item: Image -->
           <img src="{{ img1 }}" alt="{{ alt1 }}">

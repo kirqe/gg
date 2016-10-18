@@ -1,21 +1,21 @@
 <!-- section image, alt and title -->
-{% assign img1 = page.sections['section_two']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt1 = page.sections['section_two']['photo']['alt'] %}
-{% assign img1_ext_url  = page.sections['section_two']['photo']['ext_url'] %}
-{% assign title = page.sections['section_two']['title'] | textilize %}
+{% assign img1 = page.sections.section_two.photo.name | prepend:site.imgbase %}
+{% assign alt1 = page.sections.section_two.photo.alt %}
+{% assign img1_ext_url  = page.sections.section_two.photo.ext_url %}
+{% assign title = page.sections.section_two.title | textilize %}
 
 <!-- tip heading and content -->
-{% assign tip_heading = page.sections['section_two']['tip']['title'] | textilize %}
-{% assign tip_content = page.sections['section_two']['tip']['body'] | textilize %}
+{% assign tip_heading = page.sections.section_two.tip.title | textilize %}
+{% assign tip_content = page.sections.section_two.tip.body | textilize %}
 
 <!-- section main caption -->
-{% assign caption = page.sections['section_two']['caption']['body'] | markdownify %}
+{% assign caption = page.sections.section_two.caption.body | markdownify %}
 
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">
   <div class="row">
     <div class="col-sm-12">
-      <a href="{{ img1_ext_url }}" target="_blank">
+      <a href="{{ img1_ext_url }}" target="_blank"  {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
         <div class="blog-item__block">
           <!-- Blog item: Image -->
           <img src="{{ img1}}" alt="{{ alt1 }}">

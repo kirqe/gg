@@ -82,3 +82,7 @@ $.getJSON("{{site.baseurl}}/posts.json", function(data) {
 	});
 
 });
+
+$(".inactive-link").on("click", function(e){
+	e.preventDefault();
+});

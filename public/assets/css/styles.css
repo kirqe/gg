@@ -1552,3 +1552,7 @@ body {
 #page_1 .section_3 .text-block {
   margin: 10rem 0;
 }
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
+}

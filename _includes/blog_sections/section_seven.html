@@ -1,29 +1,14 @@
-{% assign title = page.sections['section_seven']['title'] %}
+{% assign title = page.sections.section_seven.title %}
+{% assign items = page.sections.section_seven.items.size %}
 
-<!-- item1 -->
-{% assign img1 = page.sections['section_seven']['item1']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt1 = page.sections['section_seven']['item1']['photo']['alt'] %}
-{% assign itm1_ext_url = page.sections['section_seven']['item1']['photo']['ext_url'] %}
-{% assign itm1_name = page.sections['section_seven']['item1']['name'] %}
-{% assign itm1_cost = page.sections['section_seven']['item1']['cost'] %}
-<!-- item2 -->
-{% assign img2 = page.sections['section_seven']['item2']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt2 = page.sections['section_seven']['item2']['photo']['alt'] %}
-{% assign itm2_ext_url = page.sections['section_seven']['item2']['photo']['ext_url'] %}
-{% assign itm2_name = page.sections['section_seven']['item2']['name'] %}
-{% assign itm2_cost = page.sections['section_seven']['item2']['cost'] %}
-<!-- item3 -->
-{% assign img3 = page.sections['section_seven']['item3']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt3 = page.sections['section_seven']['item3']['photo']['alt'] %}
-{% assign itm3_ext_url = page.sections['section_seven']['item3']['photo']['ext_url'] %}
-{% assign itm3_name = page.sections['section_seven']['item3']['name'] %}
-{% assign itm3_cost = page.sections['section_seven']['item3']['cost'] %}
-<!-- item4 -->
-{% assign img4 = page.sections['section_seven']['item4']['photo']['name'] | prepend:site.imgbase %}
-{% assign alt4 = page.sections['section_seven']['item4']['photo']['alt'] %}
-{% assign itm4_ext_url = page.sections['section_seven']['item4']['photo']['ext_url'] %}
-{% assign itm4_name = page.sections['section_seven']['item4']['name'] %}
-{% assign itm4_cost = page.sections['section_seven']['item4']['cost'] %}
+{% case items %}
+{% when 4 %} {% assign grid = 3 %}
+{% when 3 %} {% assign grid = 4 %}
+{% when 2 %} {% assign grid = 6 %}
+{% when 1 %} {% assign grid = 12 %}
+{% else %} {% assign grid = 3 %}
+{% endcase %}
+
 
 <!-- Blog: Item #7 -->
 <section class="section_blog-item section_blog-item_7">
@@ -35,59 +20,21 @@
     </div>
   </div> <!-- / .row -->
 
-  <div class="row">
-    <div class="col-sm-3">
-      <a href="{{ itm1_ext_url }}" class="blog-item__thing-link">
-        <div class="blog-item__thing">
-          <!-- Image -->
-          <img src="{{ img1 }}" alt="{{ alt1 }}">
-          <!-- Heading -->
-          <h3>
-            {{ itm1_name }}
-            <span>{{ itm1_cost }}</span>
-          </h3>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="{{ itm2_ext_url }}" class="blog-item__thing-link">
-        <div class="blog-item__thing">
-          <!-- Image -->
-          <img src="{{ img2 }}" alt="{{ alt2 }}">
-          <!-- Heading -->
-          <h3>
-            {{ itm2_name }}
-            <span>{{ itm2_cost }}</span>
-          </h3>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="{{ itm3_ext_url }}" class="blog-item__thing-link">
-        <div class="blog-item__thing">
-          <!-- Image -->
-          <img src="{{ img3 }}" alt="{{ alt3 }}">
-          <!-- Heading -->
-          <h3>{{ itm3_name }}
-            <span>{{ itm3_cost }}</span>
-          </h3>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-sm-3">
-      <a href="{{ itm4_ext_url }}" class="blog-item__thing-link">
-        <div class="blog-item__thing">
-          <!-- Image -->
-          <img src="{{ img4 }}" alt="{{ alt4 }}">
-          <!-- Heading -->
-          <h3>{{ itm4_name }}
-            <span>{{ itm4_cost }}</span>
-          </h3>
-        </div>
-      </a>
-    </div>
+  <div class="row" >
+    {% for item in page.sections.section_seven.items %}
+      <div class="col-sm-{{grid}}">
+        <a href="{{ item.photo.ext_url }}" class="blog-item__thing-link {% if item.photo.ext_url == "" %}inactive-link{% endif %}">
+          <div class="blog-item__thing">
+            <!-- Image -->
+            <img src="{{ item.photo.name | prepend:site.imgbase }}" alt="{{ item.photo.alt }}">
+            <!-- Heading -->
+            <h3>
+              {{ item.title }}
+              <span>{{ item.cost }}</span>
+            </h3>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
   </div> <!-- / .row -->
 </section>
