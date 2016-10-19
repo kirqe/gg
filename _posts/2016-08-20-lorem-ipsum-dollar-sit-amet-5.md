@@ -1,5 +1,5 @@
 ---
-layout: blog_layouts/1_section
+layout: blog_layouts/7_sections
 title:  "LOREM IPSUM DOLOR SIT AMET 5"
 featured_image: 720x500.png
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"

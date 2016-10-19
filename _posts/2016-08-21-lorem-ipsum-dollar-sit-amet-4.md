@@ -84,7 +84,7 @@ sections:
           alt: alt text here
         title: Miami
         cost: 89.95 €
-        ext_url: 
+        ext_url:
 
       - photo:
           name: 500x400.png

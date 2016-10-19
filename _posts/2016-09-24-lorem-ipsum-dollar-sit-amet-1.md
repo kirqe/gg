@@ -1,5 +1,5 @@
 ---
-layout: blog_layouts/1_section
+layout: blog_layouts/7_sections
 title:  "LOREM IPSUM DOLOR SIT AMET 1"
 featured_image: 720x500.png
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, et!"
@@ -14,7 +14,7 @@ sections:
   title: Beeren<span>looks</span>
   photo:
     name: 400x600.png
-    ext_url: 
+    ext_url:
     alt: alt text for image
   body: |
     Himbeeren, Brombeeren, Erdbeeren - ich kann diesen Winter gar nicht genug kriegen von den bunten Früchten. Mein Tipp für lässige Looks: Color- Blocking - kombiniert die Farben in allen Facetten und schreckt auch vor wilden Kombinationen nicht zurück!

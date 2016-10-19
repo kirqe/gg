@@ -1,12 +1,36 @@
 ---
 layout: blog_layouts/blog_default
 ---
+
 <!-- content renderer is inside blog_header -->
 {% include blog_sections/blog_header.html %}
-{% include blog_sections/section_one.html %}
-{% include blog_sections/section_two.html %}
-{% include blog_sections/section_three.html %}
-{% include blog_sections/section_four.html %}
-{% include blog_sections/section_five.html %}
-{% include blog_sections/section_six.html %}
-{% include blog_sections/section_seven.html %}
+
+
+<!-- Display section if it's added to front matter --- -->
+{% if page.sections.section_one %}
+  {% include blog_sections/section_one.html %}
+{% endif %}
+
+{% if page.sections.section_two %}
+  {% include blog_sections/section_two.html %}
+{% endif %}
+
+{% if page.sections.section_three %}
+  {% include blog_sections/section_three.html %}
+{% endif %}
+
+{% if page.sections.section_four %}
+  {% include blog_sections/section_four.html %}
+{% endif %}
+
+{% if page.sections.section_five %}
+  {% include blog_sections/section_five.html %}
+{% endif %}
+
+{% if page.sections.section_six %}
+  {% include blog_sections/section_six.html %}
+{% endif %}
+
+{% if page.sections.section_seven %}
+  {% include blog_sections/section_seven.html %}
+{% endif %}
