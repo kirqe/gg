@@ -1,17 +1,18 @@
+{% assign section = page.sections.section_one %}
 <!-- section image, alt, external_url and title, body -->
-{% assign img1 = page.sections.section_one.photo.name | prepend:site.imgbase %}
-{% assign alt1 = page.sections.section_one.photo.alt %}
-{% assign img1_ext_url  = page.sections.section_one.photo.ext_url | strip %}
+{% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% assign alt1 = section.photo.alt %}
+{% assign img1_ext_url  = section.photo.ext_url | strip %}
 
-{% assign title = page.sections.section_one.title | textilize %}
-{% assign body = page.sections.section_one.body | markdownify %}
+{% assign title = section.title | textilize %}
+{% assign body = section.body | markdownify %}
 
 <!-- author photo, alt and name, position -->
-{% assign img2 = page.sections.section_one.author.photo.name | prepend:site.imgbase %}
-{% assign alt2 = page.sections.section_one.author.photo.alt %}
-{% assign img2_ext_url  = page.sections.section_one.author.photo.ext_url | strip %}
-{% assign author_name = page.sections.section_one.author.name | textilize %}
-{% assign author_position = page.sections.section_one.author.position | textilize %}
+{% assign img2 = section.author.photo.name | prepend:site.imgbase %}
+{% assign alt2 = section.author.photo.alt %}
+{% assign img2_ext_url  = section.author.photo.ext_url | strip %}
+{% assign author_name = section.author.name | textilize %}
+{% assign author_position = section.author.position | textilize %}
 
 <!-- Blog: Item #1 -->
 <section class="section_blog-item section_blog-item_1">
@@ -37,6 +38,8 @@
           <div class="blog-item__quote">
             <!-- Content -->
               {{ body }}
+
+            {% if section.author %}
             <!-- Author -->
             <div class="blog-item-quote__author">
               <a href="{{ img2_ext_url }}" target="_blank" {% if img2_ext_url == "" %}class="inactive-link"{% endif %}>
@@ -53,6 +56,7 @@
                 </div>
               </div>
             </div>
+            {% endif %}
           </div>
         </div>
       </div>

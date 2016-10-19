@@ -1,14 +1,16 @@
+{% assign section = page.sections.section_four %}
 <!-- section image, alt and title, body -->
-{% assign img1 = page.sections.section_four.photo.name | prepend:site.imgbase %}
-{% assign alt1 = page.sections.section_four.photo.alt %}
-{% assign img1_ext_url  = page.sections.section_four.photo.ext_url %}
-{% assign title = page.sections.section_four.tip.title | textilize %}
-{% assign caption = page.sections.section_four.tip.body | markdownify %}
+{% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% assign alt1 = section.photo.alt %}
+{% assign img1_ext_url  = section.photo.ext_url %}
+{% assign title = section.tip.title | textilize %}
+{% assign caption = section.tip.body | markdownify %}
 
 <!-- Blog: Item #4 -->
 <section class="section_blog-item section_blog-item_4">
   <div class="row">
 
+    {% if section.tip %}
     <div class="col-sm-12">
       <a href="{{ img1_ext_url }}" target="_blank"  {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
         <div class="blog-item__block">
@@ -17,7 +19,9 @@
         </div>
       </a>
     </div>
+    {% endif %}
 
+    {% if section.tip %}
     <div class="col-sm-12">
       <!-- Blog item: Tip -->
       <div class="blog-item-tip__container">
@@ -31,6 +35,7 @@
         </div>
       </div>
     </div>
+    {% endif %}
 
   </div> <!-- / .row -->
 </section>
