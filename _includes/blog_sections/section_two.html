@@ -1,15 +1,16 @@
+{% assign section = page.sections.section_two %}
 <!-- section image, alt and title -->
-{% assign img1 = page.sections.section_two.photo.name | prepend:site.imgbase %}
-{% assign alt1 = page.sections.section_two.photo.alt %}
-{% assign img1_ext_url  = page.sections.section_two.photo.ext_url %}
-{% assign title = page.sections.section_two.title | textilize %}
+{% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% assign alt1 = section.photo.alt %}
+{% assign img1_ext_url  = section.photo.ext_url %}
+{% assign title = section.title | textilize %}
 
 <!-- tip heading and content -->
-{% assign tip_heading = page.sections.section_two.tip.title | textilize %}
-{% assign tip_content = page.sections.section_two.tip.body | textilize %}
+{% assign tip_heading = section.tip.title | textilize %}
+{% assign tip_content = section.tip.body | textilize %}
 
 <!-- section main caption -->
-{% assign caption = page.sections.section_two.caption.body | markdownify %}
+{% assign caption = section.caption.body | markdownify %}
 
 <!-- Blog: Item #2 -->
 <section class="section_blog-item section_blog-item_2">
@@ -29,7 +30,8 @@
   </div> <!-- / .row -->
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 {% unless section.caption %}col-md-offset-4{% endunless %}">
+      {% if section.tip %}
       <!-- Blog item: Tip -->
       <div class="blog-item-tip__container">
         <div class="blog-item__tip">
@@ -41,14 +43,17 @@
           </div>
         </div>
       </div>
+      {% endif %}
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-8 {% unless section.tip %}col-md-offset-2{% endunless %}">
+      {% if section.caption %}
       <!-- Blog item: Caption -->
       <div class="blog-item__caption">
         <!-- Content -->
           {{ caption }}
       </div>
+      {% endif %}
     </div>
   </div> <!-- / .row -->
 </section>

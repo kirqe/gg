@@ -1,11 +1,13 @@
+{% assign section = page.sections.section_six %}
 <!-- section image, alt and body -->
-{% assign img1 = page.sections.section_six.photo.name | prepend:site.imgbase %}
-{% assign alt1 = page.sections.section_six.photo.alt %}
-{% assign img1_ext_url  = page.sections.section_six.photo.ext_url %}
-{% assign caption = page.sections.section_six.body | markdownify %}
+{% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% assign alt1 = section.photo.alt %}
+{% assign img1_ext_url  = section.photo.ext_url %}
+{% assign caption = section.body | markdownify %}
 
 <!-- Blog: Item #6 -->
 <section class="section_blog-item section_blog-item_6">
+  {% if section.photo %}
   <div class="row">
     <div class="col-sm-12">
       <a href="{{ img1_ext_url }}" target="_blank"  {% if img1_ext_url == "" %}class="inactive-link"{% endif %}>
@@ -16,7 +18,9 @@
       </a>
     </div>
   </div> <!-- / .row -->
+  {% endif %}
 
+  {% if section.body %}
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="blog-item__plain">
@@ -24,4 +28,5 @@
       </div>
     </div>
   </div> <!-- / .row -->
+  {% endif %}
 </section>
