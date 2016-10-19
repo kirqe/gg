@@ -81,14 +81,13 @@ sections:
     items:
       - photo:
           name: 500x400.png
-          ext_url: "https://www.example.com"
           alt: alt text here
         title: Miami
         cost: 89.95 €
+        ext_url: 
 
       - photo:
           name: 500x400.png
-          ext_url: "https://www.example.com"
           alt: alt text here
         title: Kent
         cost: 89.95 €
@@ -96,17 +95,17 @@ sections:
 
       - photo:
           name: 500x400.png
-          ext_url: "https://www.example.com"
           alt: alt text here
         title: Malmo
         cost:
+        ext_url: /
 
       - photo:
           name: 500x400.png
-          ext_url: "https://www.example.com"
           alt: alt text here
         title: Malmo
         cost: 99.95 €
+        ext_url: /
 ---
 
 Satte Beerentöne sind zur Zeit ein absolutes Highlight und begegnen Euch in allen Nuancen: verführerisches Rot, knalliges Pink und edle Bordeuxtöne - unsere Lieblingsfarben der aktuellen Kollektion sind vielfältig, aufregend und ein Must-Have für winterliche Looks. Unsere Designerin Anna hat drei Kombinationen für Euch zusammengestellt.

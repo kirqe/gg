@@ -23,7 +23,8 @@
   <div class="row" >
     {% for item in page.sections.section_seven.items %}
       <div class="col-sm-{{grid}}">
-        <a href="{{ item.photo.ext_url }}" class="blog-item__thing-link {% if item.photo.ext_url == "" %}inactive-link{% endif %}">
+        {% assign ext_url = item.ext_url | strip %}
+        <a href="{{ ext_url }}" target="_blank" class="blog-item__thing-link {% if ext_url == "" %}inactive-link{% endif %}">
           <div class="blog-item__thing">
             <!-- Image -->
             <img src="{{ item.photo.name | prepend:site.imgbase }}" alt="{{ item.photo.alt }}">
