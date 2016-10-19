@@ -1,5 +1,5 @@
 <!-- section image, alt, external_url and title, body -->
-{% assign img1 = page.sections.section_one.photo..name | prepend:site.imgbase %}
+{% assign img1 = page.sections.section_one.photo.name | prepend:site.imgbase %}
 {% assign alt1 = page.sections.section_one.photo.alt %}
 {% assign img1_ext_url  = page.sections.section_one.photo.ext_url | strip %}
 
