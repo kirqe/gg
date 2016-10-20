@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+{% include head.html %}
+<body>
+<main id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <!-- content renderer is inside blog_header -->
+        {% include blog_sections/blog_header.html %}
+
+        {% for section in page.sections %}
+          {% case section.type %}
+            {% when "section_one" %} {% include blog_sections/section_one.html param=section %}
+            {% when "section_two" %} {% include blog_sections/section_two.html param=section %}
+            {% when "section_three" %} {% include blog_sections/section_three.html param=section %}
+            {% when "section_four" %} {% include blog_sections/section_four.html param=section %}
+            {% when "section_five" %} {% include blog_sections/section_five.html param=section %}
+            {% when "section_six" %} {% include blog_sections/section_six.html param=section %}
+            {% when "section_seven" %} {% include blog_sections/section_seven.html param=section %}
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+{% include footer.html %}
+</html>
