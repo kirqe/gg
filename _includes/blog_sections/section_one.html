@@ -1,4 +1,4 @@
-{% assign section = page.sections.section_one %}
+{% assign section = include.param %}
 <!-- section image, alt, external_url and title, body -->
 {% assign img1 = section.photo.name | prepend:site.imgbase %}
 {% assign alt1 = section.photo.alt %}

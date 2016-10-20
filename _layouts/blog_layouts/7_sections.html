@@ -5,32 +5,14 @@ layout: blog_layouts/blog_default
 <!-- content renderer is inside blog_header -->
 {% include blog_sections/blog_header.html %}
 
-
-<!-- Display section if it's added to front matter -->
-{% if page.sections.section_one %}
-  {% include blog_sections/section_one.html %}
-{% endif %}
-
-{% if page.sections.section_two %}
-  {% include blog_sections/section_two.html %}
-{% endif %}
-
-{% if page.sections.section_three %}
-  {% include blog_sections/section_three.html %}
-{% endif %}
-
-{% if page.sections.section_four %}
-  {% include blog_sections/section_four.html %}
-{% endif %}
-
-{% if page.sections.section_five %}
-  {% include blog_sections/section_five.html %}
-{% endif %}
-
-{% if page.sections.section_six %}
-  {% include blog_sections/section_six.html %}
-{% endif %}
-
-{% if page.sections.section_seven %}
-  {% include blog_sections/section_seven.html %}
-{% endif %}
+{% for section in page.sections %}
+  {% case section.type %}
+    {% when "section_one" %} {% include blog_sections/section_one.html param=section %}
+    {% when "section_two" %} {% include blog_sections/section_two.html param=section %}
+    {% when "section_three" %} {% include blog_sections/section_three.html param=section %}
+    {% when "section_four" %} {% include blog_sections/section_four.html param=section %}
+    {% when "section_five" %} {% include blog_sections/section_five.html param=section %}
+    {% when "section_six" %} {% include blog_sections/section_six.html param=section %}
+    {% when "section_seven" %} {% include blog_sections/section_seven.html param=section %}
+  {% endcase %}
+{% endfor %}
