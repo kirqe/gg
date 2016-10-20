@@ -1,5 +1,5 @@
 ---
-layout: blog_layouts/7_sections
+layout: blog_default
 title:  "MIDDLE SAISON WIRD ES FRUCHTIG"
 featured_image: 1920x768.png
 middle: true

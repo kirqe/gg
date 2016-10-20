@@ -1,5 +1,5 @@
 ---
-layout: blog_layouts/7_sections
+layout: blog_default
 title:  "Diese Saison wird es fruchtig"
 featured_image: 1920x768.png
 summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, illo eligendi quos veniam recusandae, expedita minus illum unde deleniti dolor..."
