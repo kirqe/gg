@@ -7,7 +7,7 @@ baseurl: '/gg' # if needed: eg /test
 imgbase: '/gg/img/' # images folder: eg /test/img/
 
 facebook:
-  app_id: 159238493440114 # facebook app id for sharing
+  app_id: 1592384934401140 # facebook app id for sharing
 
 # default meta for index page
 meta:
