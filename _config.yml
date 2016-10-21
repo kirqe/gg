@@ -4,7 +4,7 @@ future: true # display future posts
 
 url: https://railsr.github.io # your site url: eg www.example.com without / at the end
 baseurl: '/gg' # if needed: eg /test
-imgbase: '/gg/img/' # images folder: eg /test/img
+imgbase: '/gg/img/' # images folder: eg /test/img/
 
 facebook:
   app_id: 310388269340473 # facebook app id for sharing
