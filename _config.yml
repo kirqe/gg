@@ -2,18 +2,18 @@ markdown: kramdown
 permalink: /blog/:title.html
 future: true # display future posts
 
-url: https://railsr.github.io # update this to your site url: eg www.example.com
-baseurl: '/gg' # if needed: eg /test
-imgbase: '/gg/img/' # images folder: eg /test/img
+url: http://example.com # your site url: eg www.example.com without / at the end
+baseurl: '' # if needed: eg /test
+imgbase: '/img/' # images folder: eg /test/img
 
 facebook:
-  app_id: 310388269340473
-
-description: Site description here
-exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
+  app_id: 310388269340473 # facebook app id for sharing
 
 # default meta for index page
 meta:
   description: "Meta description for index page"
   keywords: "one1, two2, three3"
   author: "John Doe"
+
+description: Site description here
+exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
