@@ -2,7 +2,7 @@ markdown: kramdown
 permalink: /blog/:title.html
 future: true # display future posts
 
-url: http://www.example.com # update this to your site url: eg www.example.com
+url: railsr.github.io # update this to your site url: eg www.example.com
 baseurl: '/gg' # if needed: eg /test
 imgbase: '/gg/img/' # images folder: eg /test/img
 
