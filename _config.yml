@@ -6,6 +6,9 @@ url: http://www.example.com # update this to your site url: eg www.example.com
 baseurl: '' # if needed: eg /test
 imgbase: '/img/' # images folder: eg /test/img
 
+facebook:
+  app_id: 310388269340473
+
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
 
