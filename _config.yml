@@ -6,6 +6,9 @@ url: https://railsr.github.io/ # update this to your site url: eg www.example.co
 baseurl: '/gg' # if needed: eg /test
 imgbase: '/gg/img/' # images folder: eg /test/img
 
+facebook:
+  app_id: 310388269340473
+
 description: Site description here
 exclude: [".gitignore", "README.md", "Gemfile", "Gemfile.lock"]
 
