@@ -2,9 +2,9 @@ markdown: kramdown
 permalink: /blog/:title.html
 future: true # display future posts
 
-url: http://gorilla-digital.de # your site url: eg www.example.com without / at the end
-baseurl: '/ext/dev/armag' # if needed: eg /test
-imgbase: '/ext/dev/armag/img/' # images folder: eg /test/img
+url: https://railsr.github.io # your site url: eg www.example.com without / at the end
+baseurl: '/gg' # if needed: eg /test
+imgbase: '/gg/img/' # images folder: eg /test/img
 
 facebook:
   app_id: 310388269340473 # facebook app id for sharing
