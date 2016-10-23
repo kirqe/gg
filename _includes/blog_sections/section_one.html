@@ -1,14 +1,21 @@
 {% assign section = include.param %}
 <!-- section image, alt, external_url and title, body -->
-{% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% assign img1 = section.photo.name %}
+{% unless img1 contains '://' %}
+  {% assign img1 = section.photo.name | prepend:site.imgbase %}
+{% endunless %}
+
 {% assign alt1 = section.photo.alt %}
 {% assign img1_ext_url  = section.photo.ext_url | strip %}
-
 {% assign title = section.title | textilize %}
 {% assign body = section.body | markdownify %}
 
 <!-- author photo, alt and name, position -->
-{% assign img2 = section.author.photo.name | prepend:site.imgbase %}
+{% assign img2 = section.author.photo.name %}
+{% unless img2 contains '://' %}
+  {% assign img2 = section.photo.name | prepend:site.imgbase %}
+{% endunless %}
+
 {% assign alt2 = section.author.photo.alt %}
 {% assign img2_ext_url  = section.author.photo.ext_url | strip %}
 {% assign author_name = section.author.name | textilize %}

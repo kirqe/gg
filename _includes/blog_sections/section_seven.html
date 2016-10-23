@@ -28,7 +28,11 @@
         <a href="{{ ext_url }}" target="_blank" class="blog-item__thing-link {% if ext_url == "" %}inactive-link{% endif %}">
           <div class="blog-item__thing">
             <!-- Image -->
-            <img src="{{ item.photo.name | prepend:site.imgbase }}" alt="{{ item.photo.alt }}">
+            {% assign item_img = item.photo.name %}
+            {% unless item_img contains '://' %}
+              {% assign item_img = item_img | prepend:site.imgbase %}
+            {% endunless %}
+            <img src="{{ item_img }}" alt="{{ item.photo.alt }}">
             <!-- Heading -->
             <h3>
               {{ item.title }}
