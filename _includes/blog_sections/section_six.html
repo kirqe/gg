@@ -5,7 +5,7 @@
   {% assign img1 = section.photo.name | prepend:site.imgbase %}
 {% endunless %}
 {% assign alt1 = section.photo.alt %}
-{% assign img1_ext_url  = section.photo.ext_url %}
+{% assign img1_ext_url  = section.photo.ext_url | strip %}
 {% assign caption = section.body | markdownify %}
 
 <!-- Blog: Item #6 -->

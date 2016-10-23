@@ -6,7 +6,7 @@
 {% endunless %}
 
 {% assign alt1 = section.photo.alt %}
-{% assign img1_ext_url  = section.photo.ext_url %}
+{% assign img1_ext_url  = section.photo.ext_url | strip %}
 {% assign title = section.title | textilize %}
 {% assign caption = section.body | markdownify %}
 
