@@ -13,7 +13,7 @@
 <!-- author photo, alt and name, position -->
 {% assign img2 = section.author.photo.name %}
 {% unless img2 contains '://' %}
-  {% assign img2 = section.photo.name | prepend:site.imgbase %}
+  {% assign img2 = ection.author.photo.name | prepend:site.imgbase %}
 {% endunless %}
 
 {% assign alt2 = section.author.photo.alt %}
